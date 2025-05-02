@@ -1,4 +1,54 @@
 html {
-    background-color: rgb(195, 195, 195);
-    color: black;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+    --main-bg-color: rgb(45, 44, 44);
+    --main-font-color: rgb(232, 229, 229);
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+}
+
+.container {
+    margin: 1rem auto;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    text-align: center;
+}
+
+form button {
+    margin-left: 1rem;
+}
+
+#gameboard {
+    max-width: 50%;
+    background-color: var(--main-font-color);
+    margin: 2rem auto;
+    height: 480px;
+    padding: 1em;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: .5em .1em;
+    border-radius: 10px;
+}
+
+.cell {
+    background-color: black;
+    height: 122px;
+    width: 30%;
+    font-size: 80px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
 }

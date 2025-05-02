@@ -130,51 +130,51 @@ const updateGameboard = (choice, player) => {
 
 //##### GAME LOOP #####//
 
-const gameLoop = (() => {
+// const gameLoop = (() => {
 
-    // Get the players' name
-    let player1 = player(prompt('Player 1: What is your name?'), 'X');
-    let player2 = player(prompt('Player 2: What is your name?'), 'O');
+//     // Get the players' name
+//     let player1 = player(prompt('Player 1: What is your name?'), 'X');
+//     let player2 = player(prompt('Player 2: What is your name?'), 'O');
 
-    let win = checkWin(player1).getWin();
+//     let win = checkWin(player1).getWin();
 
-    // Render the board
-    render();
+//     // Render the board
+//     render();
 
-    let cell;
+//     let cell;
 
-    // The loop until there is a win
-    while (win == false) {
+//     // The loop until there is a win
+//     while (win == false) {
         
-        // Get the player's choice
-        let choice1 = getChoice(player1);
+//         // Get the player's choice
+//         let choice1 = getChoice(player1);
         
-        // Update board
-        updateGameboard(choice1, player1);
-        win = checkWin(player1).getWin();
-        if (win) {
-            console.log(`${player1.name}, you won!`);
-            break;
-        }
-        render();
+//         // Update board
+//         updateGameboard(choice1, player1);
+//         win = checkWin(player1).getWin();
+//         if (win) {
+//             console.log(`${player1.name}, you won!`);
+//             break;
+//         }
+//         render();
 
-        // Get Player 2 choice and update board
-        let choice2 = getChoice(player2);
+//         // Get Player 2 choice and update board
+//         let choice2 = getChoice(player2);
 
-        // Update board
-        updateGameboard(choice2, player2);
-        win = checkWin(player2).getWin();
-        if (win) {
-            console.log(`${player2.name}, you won!`);
-            break;
-        }
-        render();
+//         // Update board
+//         updateGameboard(choice2, player2);
+//         win = checkWin(player2).getWin();
+//         if (win) {
+//             console.log(`${player2.name}, you won!`);
+//             break;
+//         }
+//         render();
 
-        // Stop the loop
-        // win = true;
-    }
+//         // Stop the loop
+//         // win = true;
+//     }
 
     
 
-    return {player1, player2, win, cell};
-})()
+//     return {player1, player2, win, cell};
+// })()
