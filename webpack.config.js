@@ -6,9 +6,10 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: '[name].bundle.js',
+        scriptType: 'text/javascript',
         path: path.resolve(__dirname, 'dist'),
     },
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     devServer: {
         static: './dist',
     },
@@ -20,8 +21,8 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
             },
             {
                 test: /\.m?js$/,
