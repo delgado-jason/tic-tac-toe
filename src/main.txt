@@ -12,18 +12,6 @@ const gameboard = (function () {
     return {getGameboard}
 })()
 
-// Player
-function player(name, token) {
-    name;
-    let playerToken = token;
-    let wins = 0;
-
-    const getPlayerToken = () => playerToken;
-    const getWins = () => wins;
-    const addWin = () => ++wins;
-
-    return {name, getPlayerToken, getWins, addWin};
-}
 
 // Player tokens
 // function token() {
